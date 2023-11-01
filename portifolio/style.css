@@ -1,0 +1,26 @@
+﻿
+.gradient-div {
+    background: linear-gradient(to bottom, rgb(66, 68, 82), rgb(33,37,41));
+    height: 100vh;
+  }
+
+  .img-fluid {
+    background: linear-gradient(to bottom, #007bff, #42d392);
+  }
+
+  .text-gradient {
+    background: linear-gradient(to bottom, #007bff, #42d392);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .social-btn:hover {
+    background: linear-gradient(to bottom, #007bff, #42d392);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .container {
+    width: 90%;
+    margin-top: 56px;
+  }
