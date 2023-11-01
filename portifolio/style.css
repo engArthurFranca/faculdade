@@ -1,4 +1,66 @@
-﻿
+﻿body{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  margin: auto auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  margin-top: 100px;
+  scroll-margin-top: 80px;
+}
+
+.formation-line {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.formation-icon-line {
+  justify-self: end;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 3px;
+  height: 100%;
+  margin: 0 30px 0 30px;
+  background-color: azure;
+}
+
+.formation-icon-dot, .formation-icon-dot-shadow {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #373740ff;
+  border-radius: 50%;
+}
+
+.formation-icon-dot {
+  width: 18px;
+  height: 18px;
+  background: blue;
+}
+
+.current {
+  background: green;
+}
+
+.card {
+  background-color: #373740ff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
 .gradient-div {
     background: linear-gradient(to bottom, rgb(66, 68, 82), rgb(33,37,41));
     height: 100vh;
@@ -12,15 +74,40 @@
     background: linear-gradient(to bottom, #007bff, #42d392);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 30px;
   }
 
-  .social-btn:hover {
+  .social-btn:hover, .git-btn:hover {
     background: linear-gradient(to bottom, #007bff, #42d392);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
-  .container {
-    width: 90%;
-    margin-top: 56px;
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas:
+    ". a a ."
+    ". a a .";
+
+    gap: 10px;
+    width: 100%;
+    margin: 56px auto 0;
+    background: linear-gradient(180deg,#424452,#212529);
+  }
+
+.about-profile {
+  justify-self: end; 
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+  .about-text {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
+    margin-right: 10%;
+    text-justify: inter-word;
   }
