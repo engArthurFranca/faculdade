@@ -1,4 +1,6 @@
-﻿body{
+﻿/* Global attributes */
+
+body{
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   margin: 0;
@@ -15,6 +17,57 @@
   margin-top: 56px;
   scroll-margin-top: 60px;
 }
+
+/* About Section */
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-areas:
+  ". a a ."
+  ". a a .";
+
+  gap: 10px;
+  width: 100%;
+  margin: 56px auto 0;
+  background: linear-gradient(180deg,#424452,#212529);
+}
+
+.about-profile {
+  justify-self: end; 
+  margin-right: 5%;
+  margin-top: 60px;
+  margin-left: 10%;
+}
+
+.about-text {
+  align-self: center;
+  justify-self: center;
+  text-align: justify;
+  margin-right: 10%;
+  margin-top: 60px;
+  text-justify: inter-word;
+}
+
+/* Picture */
+
+.gradient-div {
+  background: linear-gradient(to bottom, rgb(66, 68, 82), rgb(33,37,41));
+  height: 100vh;
+}
+
+.img-fluid {
+  background: linear-gradient(to bottom, #007bff, #42d392);
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom, #007bff, #42d392);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+
+/* Formation Section */
 
 .formation-line {
   display: grid;
@@ -61,21 +114,7 @@
 }
 
 
-.gradient-div {
-    background: linear-gradient(to bottom, rgb(66, 68, 82), rgb(33,37,41));
-    height: 100vh;
-  }
-
-  .img-fluid {
-    background: linear-gradient(to bottom, #007bff, #42d392);
-  }
-
-  .text-gradient {
-    background: linear-gradient(to bottom, #007bff, #42d392);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 30px;
-  }
+/* Contact Section */
 
   .social-btn:hover, .git-btn:hover {
     background: linear-gradient(to bottom, #007bff, #42d392);
@@ -83,34 +122,7 @@
     -webkit-text-fill-color: transparent;
   }
   
-  .about-wrapper {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-areas:
-    ". a a ."
-    ". a a .";
 
-    gap: 10px;
-    width: 100%;
-    margin: 56px auto 0;
-    background: linear-gradient(180deg,#424452,#212529);
-  }
-
-.about-profile {
-  justify-self: end; 
-  margin-right: 5%;
-  margin-top: 60px;
-  margin-left: 10%;
-}
-
-  .about-text {
-    align-self: center;
-    justify-self: center;
-    text-align: justify;
-    margin-right: 10%;
-    margin-top: 60px;
-    text-justify: inter-word;
-  }
 
   @media (max-width: 700px) {
     .about-wrapper {
