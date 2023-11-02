@@ -13,6 +13,10 @@ body{
   color: rgb(248,249,250);
 }
 
+a {
+  color: #6c757d;
+}
+
 .title {
   text-align: center;
   margin-bottom: 40px;
@@ -21,6 +25,10 @@ body{
 .wrapper {
   margin-top: 56px;
   scroll-margin-top: 60px;
+}
+
+.icon-instagram {
+  mask: url(./assets/icons/instagram.svg);
 }
 
 /* Navbar Section */
@@ -157,13 +165,16 @@ body{
 .card {
   background-color: #373740ff;
   margin-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   border-radius: 5%;
+  align-items: center;
 }
 
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
+  margin-top: 20px;
 }
 
 .card-subtitle {
@@ -176,18 +187,49 @@ body{
   margin-bottom: 0.5rem;
 }
 
+/* Projects Section */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto no botão */
+  border: 1px solid #007bff; /* Borda do botão */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+}
+
+/* Estilizar o botão no hover (ao passar o mouse) */
+.btn:hover {
+  background-color: #42d392; /* Nova cor de fundo no hover */
+  color: #fff; /* Nova cor do texto no hover */
+}
 
 /* Contact Section */
 
-.social-btn:hover, .git-btn:hover {
-  background: linear-gradient(to bottom, #007bff, #42d392);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.github-icon {
+  display: inline-block;
+  background-image: url('./assets/icons/github.svg');
+}
+
+
+.btn-social {
+  fill: white;
+}
+
+.btn-social:hover {
+  fill: #42d392;
+  filter: hue-rotate(180deg)
+  cursor: pointer;
 }
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .about-wrapper {
     display: flex;
     flex-direction: column;
@@ -199,8 +241,8 @@ body{
   .about-text {
     margin: auto 20px;
   }
-
   .formation-line {
     grid-template-columns: 1fr 2fr;
   }
+
 }
